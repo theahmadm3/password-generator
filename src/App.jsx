@@ -18,7 +18,7 @@ const App = () => {
     const lengthValue = parseInt(passwordLength);
 
     if (isNaN(lengthValue) || lengthValue < 8 || lengthValue > 16) {
-      setErrorMessage('Error: The length should be between 8 and 16.');
+      setErrorMessage('Error: The password length should be between 8 and 16.');
     } else {
       let generatedPassword = '';
       generatedPassword += letters[Math.floor(Math.random() * letters.length)];
@@ -44,13 +44,13 @@ const App = () => {
   return (
     <div className="mb5 pa2 w-100">
       <header className="mw7 center ph5-l">
-        <h1>Random Password generator</h1>
+        <h1>Password generator</h1>
       </header>
       <main className="mw7 center ph5-l">
         <div>
           <h1>
-            Generate a <br />
-            Random Password
+            Generate your <br />
+            Password
           </h1>
         </div>
         <section className="center pa2 mb4 f4">
