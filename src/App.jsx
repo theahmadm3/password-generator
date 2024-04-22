@@ -3,6 +3,8 @@ import 'tachyons';
 import copyImg from './Images/copy.svg';
 import generateImg from './Images/zap.svg';
 
+
+
 const App = () => {
   const [password, setPassword] = useState('');
   const [passwordLength, setPasswordLength] = useState('');
